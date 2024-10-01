@@ -76,6 +76,7 @@ docker_run_params=$(cat <<-END
     -v /dev/shm:/dev/shm \
     -v /opt/xilinx/dsa:/opt/xilinx/dsa \
     -v /opt/xilinx/overlaybins:/opt/xilinx/overlaybins \
+    -v /home/dsosatr/tesis/DYB-linearHead:/workspace/DYB \
     -e USER=$user -e UID=$uid -e GID=$gid \
     -v $DOCKER_RUN_DIR:/vitis_ai_home \
     -v $HERE:/workspace \
